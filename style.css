@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    background-color: rgb(76, 170, 207);
+}
+
+header{
+    font-size: 1.3rem;
+    color: white;
+}
+
+header, form{
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+}
+
+.text-field, .add-button{
+    border: none;
+    background-color: white;
+    padding: 1rem;
+}
+
+.text-field{
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    outline: none;
+}
+
+.add-button{
+    outline: none;
+    background-color: rgb(255, 143, 68);
+    color: white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+}
+
+.list-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list{
+    min-width: 30%;
+    list-style: none;
+}
+
+.todo{
+    margin: 0.5rem;
+    background: white;
+    color: black;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.list-item{
+    flex:1;
+    padding: 0rem 0.5rem;
+}
+
+.check-button, .remove-button{
+    padding: 1rem;
+    border: none;
+    font-size: 1rem;
+}
+
+.check-button{
+    background-color: rgb(65, 221, 65);
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
+
+.remove-button{
+    background-color: rgb(238, 89, 89);
+    color: white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    outline: none;
+    cursor: pointer;
+}
+
+.fa-check, .fa-trash{
+    pointer-events: none;
+}
+
+.done{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.clock{
+    color: white;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    font-size: 22px;
+}
